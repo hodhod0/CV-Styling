@@ -1,0 +1,196 @@
+header {
+  background-color: gray;
+}
+
+hgroup {
+  color: red;
+  color: red;
+  font-family: system-ui;
+  padding: 37px 37px;
+}
+
+figure img {
+  margin-bottom: 18px;
+}
+
+section h3 {
+  font-weight: bold;
+  margin-left: 30px;
+  font-family: sans-serif;
+}
+
+section h3::before {
+  display: block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  content: "";
+  transform: translateX(-(25px));
+  margin-left: -30px;
+  background-color: red;
+}
+
+section h3::after {
+  content: "";
+  border-bottom: 1px solid rgba(79, 84, 102, 0.308);
+  margin-left: -30px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: block;
+}
+
+.skill {
+  background-color: gray;
+  padding: 7px 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+.skill span {
+  background-color: red;
+  width: attr(data-skill);
+  display: block;
+  padding: 5px 10px;
+}
+
+.skills-secondary .skill {
+  background-color: #bbbaba;
+}
+
+[data-skill="1"] span {
+  width: 10%;
+}
+[data-skill="2"] span {
+  width: 20%;
+}
+[data-skill="3"] span {
+  width: 30%;
+}
+[data-skill="4"] span {
+  width: 40%;
+}
+[data-skill="5"] span {
+  width: 50%;
+}
+[data-skill="6"] span {
+  width: 60%;
+}
+[data-skill="7"] span {
+  width: 70%;
+}
+[data-skill="8"] span {
+  width: 80%;
+}
+[data-skill="9"] span {
+  width: 90%;
+}
+[data-skill="10"] span {
+  width: 100%;
+}
+
+section h4 {
+  color: red;
+}
+.experience-date-separator {
+  color: red;
+  font-weight: bold;
+}
+
+.experience-details {
+  color: #b6b6b6;
+}
+.experience-type {
+  font-weight: bold;
+}
+.experience-institution {
+  color: #e14848db;
+}
+@media only screen and (max-width: 576px) {
+  dt {
+    color: white;
+    background-color: red;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin: 0;
+  }
+
+  dd {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+  }
+
+  dd a {
+    color: red;
+    text-decoration: none;
+  }
+
+  dl {
+    margin: -1px;
+  }
+
+  dl dt {
+    padding: 5px 7px;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  .content {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contacts {
+    position: absolute;
+    top: 27px;
+    right: 0;
+    left: 50%;
+    background: #000;
+    padding: 1px;
+  }
+  dt {
+    color: white;
+    background-color: red;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin: 0;
+  }
+
+  dd {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    background-color: black;
+  }
+
+  dd a {
+    color: red;
+    text-decoration: none;
+  }
+
+  dl {
+    margin: -1px;
+  }
+
+  dl dt,
+  dl dd {
+    padding: 6px 36px;
+    padding-left: 14px;
+  }
+  figure img {
+    position: absolute;
+    top: 35px;
+    left: 30%;
+  }
+
+  hgroup h1, h2{
+    padding-left: 78px;
+  }
+}
