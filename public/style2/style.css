@@ -1,0 +1,280 @@
+hgroup h1 {
+  font-weight: bold;
+  font-family: sans-serif;
+  border-bottom: 1px solid rgb(219 210 210);
+  padding-bottom: 14px;
+}
+
+#about p {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#competencies {
+  margin-top: 80px;
+}
+
+.skills-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skills-secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 10px;
+}
+.skills {
+  padding: 3px;
+}
+.skill {
+  padding: 7px;
+  background-color: #0b8f6ef0;
+  color: white;
+  height: 20px;
+}
+
+[data-skill="1"] span::after {
+  content: "\2605";
+}
+[data-skill="2"] span::after {
+  content: "\2605";
+}
+[data-skill="3"] span::after {
+  content: "\2605\2605";
+}
+[data-skill="4"] span::after {
+  content: "\2605\2605";
+}
+[data-skill="5"] span::after {
+  content: "\2605\2605\2605";
+}
+[data-skill="6"] span::after {
+  content: "\2605\2605\2605";
+}
+[data-skill="7"] span::after {
+  content: "\2605\2605\2605\2605";
+}
+[data-skill="8"] span::after {
+  content: "\2605\2605\2605\2605";
+}
+[data-skill="9"] span::after {
+  content: "\2605\2605\2605\2605\2605";
+}
+[data-skill="10"] span::after {
+  content: "\2605\2605\2605\2605\2605";
+}
+
+.skill span::after {
+  float: right;
+}
+
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience-type {
+  color: #01b19f;
+  font-family: sans-serif;
+}
+
+.experience-details {
+  color: grey;
+  align-self: center;
+  margin-left: auto;
+}
+.experience-date-separator {
+  color: turquoise;
+  font-weight: bold;
+}
+
+.contact {
+  width: 100px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-email {
+  background-image: url("../images/email.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact-phone {
+  background-image: url("../images/phone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact-github {
+  background-image: url("../images/github.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contact-facebook {
+  background-image: url("../images/facebook.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact-type,
+.contact-value,
+.contact-skype,
+hgroup h2,
+#about h3,
+.experience-institution,
+#contact h3 {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  #\#wrapper {
+    padding: 5px 25px;
+  }
+  section h3 {
+    border-bottom: 1px solid;
+    width: 120px;
+    font-style: italic;
+    font-family: sans-serif;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    display: none;
+  }
+  .skill {
+    width: 86px;
+  }
+
+  #hobbies {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 577px) {
+  #\#wrapper {
+    padding: 20px 20px;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  #\#wrapper {
+    /* padding: 20px 100px 20px 100px; */
+    /* padding: 20px 100px; */
+    max-width: 800px;
+    margin: auto;
+  }
+
+  header div {
+    display: flex;
+  }
+
+  hgroup {
+    flex: 2;
+  }
+
+  figure {
+    flex: 1;
+  }
+
+  figure img {
+    width: 140px;
+    transform: rotate(-20deg);
+    margin-left: 60px;
+    margin-top: 50px;
+  }
+
+  #about p {
+    position: absolute;
+    top: 110px;
+    width: 525px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  section h3 {
+    width: 120px;
+    margin: 0;
+  }
+
+  section h3:after {
+    content: "";
+    border-right: 2px solid black;
+    display: block;
+    margin-top: -18px;
+    position: absolute;
+    margin-left: 117px;
+  }
+
+  #competencies h3:after {
+    height: 80px;
+  }
+
+  #experiences h3:after {
+    height: 340px;
+  }
+
+  #education h3:after {
+    height: 355px;
+  }
+
+  #hobbies h3:after {
+    height: 80px;
+  }
+
+  .skills-primary {
+    width: 450px !important;
+    margin-left: 20px;
+  }
+
+  .skills-secondary {
+    width: 450px !important;
+  }
+
+  .skill {
+    width: 120px;
+  }
+
+  section div {
+    width: 650px;
+  }
+
+  section div:first-child {
+    margin: 0;
+  }
+
+  section div:last-child {
+    margin-left: 140px;
+  }
+
+  .skills div:last-child {
+    margin-left: 0 !important;
+  }
+
+  .experience {
+    margin-left: 20px;
+  }
+
+  .experience-details {
+    margin-left: auto;
+    width: auto;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  ul {
+    margin-top: auto;
+  }
+}
